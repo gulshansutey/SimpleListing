@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/iv_product_img"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:text="Sale"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_sale_label"
+            android:textColor="@color/colorSaleText"
+            android:background="@color/colorSaleLabel"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#433f51b5"
+            android:padding="5dp"
+            android:layout_below="@+id/iv_product_img"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Item name"
+                android:textSize="18sp"
+                android:id="@+id/tv_name"
+                android:textStyle="bold"
+                android:textColor="@color/colorTitle"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Item price"
+                android:textSize="16sp"
+                android:id="@+id/tv_price"
+                android:textColor="@color/colorTitle"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
